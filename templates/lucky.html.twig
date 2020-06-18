@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>{{ title }}</h1>
+    <p>Hi everybody!</p>
+    <a href="{{ path('hello',{'prenom':'BoB','age':41}) }}">Click Here page hello!</a>
+    {% if age >= 18 %}
+        <p>You are an adult.</p>
+    {% else %}
+        <p>You are a child.</p>
+    {% endif %}
+{% endblock %}
